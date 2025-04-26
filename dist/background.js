@@ -1,0 +1,1 @@
+chrome.runtime.onInstalled.addListener((function(){console.log("AI OCR Extension installed")})),chrome.runtime.onMessage.addListener((function(e,n,t){return"saveData"===e.action&&(chrome.storage.local.set({ocrData:e.data}),t({success:!0})),!0})); 

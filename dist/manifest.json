@@ -1,0 +1,16 @@
+{
+   "manifest_version": 3,
+   "name": "AI OCR Extension",
+   "version": "1.0",
+   "description": "Extract and analyze text from images",
+   "action": {
+     "default_popup": "popup.html",
+     "default_icon": {
+       
+     }
+   }, 
+   "permissions": ["activeTab", "storage"],
+   "background": {
+     "service_worker": "background.js"
+   }
+ }
