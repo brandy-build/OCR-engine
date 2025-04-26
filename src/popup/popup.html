@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI OCR Scanner</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI OCR Scanner</h1>
+    <div class="upload-area" id="dropZone">
+      <p>Drag & drop image or click to browse</p>
+      <input type="file" id="fileInput" accept="image/*">
+    </div>
+    <button id="captureBtn">Capture from Screen</button> 
+    <div id="results">
+      <h3>OCR Results</h3>
+      <div id="textOutput"></div>
+      <h3>AI Analysis</h3>
+      <div id="aiOutput"></div>
+    </div>
+    <div id="errorOutput" style="color: red; margin-top: 10px;"></div>
+  </div>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>
